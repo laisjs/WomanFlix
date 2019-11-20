@@ -22,7 +22,7 @@
 .card {
     width: calc(25% - 8vw); 
     height: 30vw; 
-    margin: 1vw .75vw;
+    margin: 1vw .75vw 2.5vw;
     border: solid 1px #AAA;
     background-color: #FFF7;
     display: flex;
