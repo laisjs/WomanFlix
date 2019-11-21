@@ -13,6 +13,13 @@
     animation-delay: 0.5s;
 }
 
+.modal-showing {
+    display: block;
+    transition: opacity 500ms ease-in;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+}
+
 .info-content {
     background-color: #FFFFFFAA;
     margin: 5vw auto 5vw; 
@@ -40,12 +47,28 @@
 
 .info-img {
     width: 45%;
+    height: 65%;
     background-position: cover;
     background-repeat: no-repeat;
 }
 
 .info-text {
     width: 45%;
+    height: 65%;
     line-height: 1.5;
     font-size: 1.4vw;
+}
+
+.modal-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.modal-btn {
+    width: 11vw;
+    padding: .75vw;
+    font-size:1.1vw;
+    background-color: #071B1B;
+    color: #FFFC;
 }

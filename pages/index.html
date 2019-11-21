@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="../font-awesome/css/all.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/banner.css">
@@ -42,7 +43,7 @@
                 <figcaption>Histórias Cruzadas</figcaption> 
                 <div class="cards-btn-container">
                     <button class="card-movies-btn watch-btn">Assista Agora<i class="fas fa-play"></i></button>   
-                    <button class="card-movies-btn info-btn">Assista Agora<i class="fas fa-play"></i></button>      
+                    <button data-film ="hist-cruz" class="card-movies-btn info-btn" onclick="showModal()">Informações<i class="fas fa-question"></i></button>     
                 </div>               
             </div>
             <figure class="card">
@@ -50,7 +51,7 @@
                 <figcaption>As Panteras</figcaption>  
                 <div class="cards-btn-container">
                     <button class="card-movies-btn watch-btn">Assista Agora<i class="fas fa-play"></i></button>   
-                    <button class="card-movies-btn info-btn">Assista Agora<i class="fas fa-play"></i></button>      
+                    <button data-film ="pant" class="card-movies-btn info-btn" onclick="showModal()">Informações<i class="fas fa-question"></i></button>      
                 </div>                   
             </figure>
             <figure class="card">
@@ -58,7 +59,7 @@
                 <figcaption>As Panteras -2019</figcaption> 
                 <div class="cards-btn-container">
                     <button class="card-movies-btn watch-btn">Assista Agora<i class="fas fa-play"></i></button>   
-                    <button class="card-movies-btn info-btn">Assista Agora<i class="fas fa-play"></i></button>      
+                    <button data-film="pant-19" class="card-movies-btn info-btn" onclick="showModal()">Informações<i class="fas fa-question"></i></button>      
                 </div>                    
             </figure>
             <figure class="card">
@@ -66,7 +67,7 @@
                 <figcaption>Capitã Marvel</figcaption> 
                 <div class="cards-btn-container">
                     <button class="card-movies-btn watch-btn">Assista Agora<i class="fas fa-play"></i></button>   
-                    <button class="card-movies-btn info-btn">Assista Agora<i class="fas fa-play"></i></button>      
+                    <button data-film="cap-marv" class="card-movies-btn info-btn" onclick="showModal()">Informações<i class="fas fa-question"></i></button>     
                 </div>                    
             </figure>
             <figure class="card">
@@ -74,7 +75,7 @@
                 <figcaption>Extreminador do Futuro</figcaption> 
                 <div class="cards-btn-container">
                     <button class="card-movies-btn watch-btn">Assista Agora<i class="fas fa-play"></i></button>   
-                    <button class="card-movies-btn info-btn">Assista Agora<i class="fas fa-play"></i></button>      
+                    <button data-film="extr-fut" class="card-movies-btn info-btn" onclick="showModal()">Informações<i class="fas fa-question"></i></button>        
                 </div>                    
             </figure>
             <figure class="card">
@@ -82,7 +83,7 @@
                 <figcaption>Jogos Vorazes</figcaption>  
                 <div class="cards-btn-container">
                     <button class="card-movies-btn watch-btn">Assista Agora<i class="fas fa-play"></i></button>   
-                    <button class="card-movies-btn info-btn">Assista Agora<i class="fas fa-play"></i></button>      
+                    <button data-film="jog-voraz" class="card-movies-btn info-btn" onclick="showModal()">Informações<i class="fas fa-question"></i></button>       
                 </div>                   
             </figure>
             <figure class="card">
@@ -90,7 +91,7 @@
                 <figcaption>Mulher Maravilha</figcaption>  
                 <div class="cards-btn-container">
                     <button class="card-movies-btn watch-btn">Assista Agora<i class="fas fa-play"></i></button>   
-                    <button class="card-movies-btn info-btn">Assista Agora<i class="fas fa-play"></i></button>      
+                    <button data-film="mul-mar" class="card-movies-btn info-btn" onclick="showModal()">Informações<i class="fas fa-question"></i></button>     
                 </div>                   
             </figure>
             <figure class="card"> 
@@ -98,15 +99,14 @@
                 <figcaption>Onde está segunda</figcaption>  
                 <div class="cards-btn-container">
                     <button class="card-movies-btn watch-btn">Assista Agora<i class="fas fa-play"></i></button>   
-                    <button class="card-movies-btn info-btn">Assista Agora<i class="fas fa-play"></i></button>      
-                </div>                   
+                    <button data-film="ond-est" class="card-movies-btn info-btn" onclick="showModal()">Informações<i class="fas fa-question"></i></button>                  </div>                   
             </figure>
             <figure class="card">
                 <div class="card-img amelie "></div>
                 <figcaption>O Fabuloso Destino de Amelie Poulain</figcaption>  
                 <div class="cards-btn-container">
                     <button class="card-movies-btn watch-btn">Assista Agora<i class="fas fa-play"></i></button>   
-                    <button class="card-movies-btn info-btn">Assista Agora<i class="fas fa-play"></i></button>      
+                    <button data-film="amelie" class="card-movies-btn info-btn" onclick="showModal()">Informações<i class="fas fa-question"></i></button>      
                 </div>                   
             </figure>
             <figure class="card">
@@ -114,23 +114,28 @@
                 <figcaption>Kill Bill</figcaption> 
                 <div class="cards-btn-container">
                     <button class="card-movies-btn watch-btn">Assista Agora<i class="fas fa-play"></i></button>   
-                    <button class="card-movies-btn info-btn">Informações<i class="fas fa-question"></i></i></button>      
+                    <button data-film="kill-bill" class="card-movies-btn info-btn" onclick="showModal()">Informações<i class="fas fa-question"></i></button>      
                 </div>              
             </figure>
         </div>
     </section>
-    <div class="info-movie">
+    <div id="modal-info" class="info-movie">
         <div class="info-content">
-            <h2 id="movie-title">Kill Bill</h2>
+            <h2 id="movie-title"></h2>
             <div class="info-container">
-                <p class="info-text">A Noiva (Uma Thurman) é uma perigosa assassina que trabalhava em um grupo, liderado por Bill (David Carradine), composto principalmente por mulheres. Grávida, ela decide escapar dessa vida de violência e decide se casar, mas no dia da cerimônia seus companheiros de trabalho se voltam contra ela, quase a matando. Após cinco anos em coma, ela desperta sem um bebê e com um único desejo: vingança. A Noiva decide procurar, e matar, as cinco pessoas que destruiram o seu futuro, começando pelas perigosas assassinas Vernita Green (Vivica A. Fox) e O-Ren Ishii (Lucy Liu).</p>
-                <div class="info-img kill-bill"></div>
+                <div  id="info-text" class="info-text"></div>
+                <div class="info-img" id="info-img"></div>
             </div>
-            <div class="cards-btn-container">
-                    <button class="card-movies-btn watch-btn">Assista Agora<i class="fas fa-play"></i></button>   
-                    <button class="card-movies-btn info-btn">Informações<i class="fas fa-question"></i></i></button>      
-                </div>  
+            <div class="modal-btns">
+                <button class=" modal-btn" id="mod-watch-btn">Assista Agora<i class="fas fa-play"></i></button> 
+                <button class=" modal-btn" id= "close-modal-btn" onclick="closeModal()">Fechar<i class="fas fa-times"></i></button>
+            </div>
         </div>
     </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/modal/modal-movie-title.js"></script>
+    <script src="../js/modal/modal-img.js"></script>
+    <script src="../js/modal/modal-info-text.js"></script>
+    <script src="../js/modal/modal-btn.js"></script>
 </body>
 </html>
