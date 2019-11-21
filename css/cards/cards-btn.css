@@ -1,0 +1,17 @@
+.card-movies-btn{
+    width: 100%;
+    padding: .75vw;
+    font-size:1.1vw;
+}
+
+.info-btn {
+    background-color:#FFE7;
+    color: #C75aaB99;
+    border: solid .1vw #C75aaB99;
+}
+
+.watch-btn {
+    background-color: #C75aaB99;
+    border:none;
+    color:#FFE;
+}
