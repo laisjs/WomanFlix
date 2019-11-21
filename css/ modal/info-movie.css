@@ -1,0 +1,51 @@
+.info-movie {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100vh; 
+    overflow: auto; 
+    background-color: #071B1B; 
+    transition: opacity 500ms ease-in;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+}
+
+.info-content {
+    background-color: #FFFFFFAA;
+    margin: 5vw auto 5vw; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; 
+    height: 70%;
+    border-radius: 3vw;
+    align-items: cente
+}
+
+#movie-title {
+    color: #071B1B;
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 1.5vw;
+}
+
+.info-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-img {
+    width: 45%;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+.info-text {
+    width: 45%;
+    line-height: 1.5;
+    font-size: 1.4vw;
+}
