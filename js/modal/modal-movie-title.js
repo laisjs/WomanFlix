@@ -11,6 +11,7 @@ function setModal() {
         case 'hist-cruz':
             titlePlace.innerHTML = 'Histórias Cruzadas';
             addClass(imagePlace, 'hist-cruz')
+            remove(imagePlace, 'hist-cruz')
             break;
         case 'pant':
             titlePlace.innerHTML = 'As Panteras';
