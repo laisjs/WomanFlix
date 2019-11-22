@@ -5,13 +5,13 @@
 }
 
 .info-btn {
-    background-color:#FFE7;
-    color: #C75aaB99;
-    border: solid .1vw #C75aaB99;
+    background-color: #CCC9C9;
+    color: #071B1B;
+    border: solid .1vw #071B1B; 
 }
 
 .watch-btn {
-    background-color: #C75aaB99;
+    background-color: #071B1B; 
     border:none;
-    color:#FFE;
+    color:#CCC9C9;
 }

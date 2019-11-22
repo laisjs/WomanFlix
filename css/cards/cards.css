@@ -1,13 +1,15 @@
 .movies-card {
-    background-color: #FDD;
+    background-color: #CCC9C9;
     margin: 0 auto;
 }
 
 .movies-card h2{
-    padding-top: 2vw;
+    padding: 2vw;
+    text-transform: uppercase;
+    letter-spacing: .3vw;
     text-align: center;
     font-size: 3vw;
-    color: #C75aaB;
+    color: #071B1B; 
 
 }
 
@@ -24,11 +26,17 @@
     height: 33vw; 
     margin: 1vw .75vw 2.5vw;
     border: solid 1px #AAA;
-    border-radius: 0.3vw;
+    border-radius: 0.03vw;
     background-color: #FFF7;
     display: flex;
     flex-direction: column;
 }
+
+.card:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
 
 card:nth-child(4n-1) {
     margin-left: 3vw;
@@ -47,7 +55,7 @@ figcaption {
     padding: 0.5vw;
     font-size: 1.5vw;
     text-align: center;
-    color: #C75aaB;
+    color: #071B1B; 
     height: 5%;
 }
 

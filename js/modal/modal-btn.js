@@ -1,10 +1,12 @@
 let modal = document.getElementById("modal-info");
+let modalContent = document.getElementById("info-content")
 
 function showModal() {
-    addClass(modal, "fadeIn");
+    addClass(modalContent, "fadeIn");
     setTimeout(function(){
         addClass(modal, "modal-showing");
-    },2000)
+        removeClass(modal, "fadeIn")
+    },1000)
 }
 
 function closeModal() {
@@ -12,5 +14,5 @@ function closeModal() {
     setTimeout(function(){
     removeClass(modal, "modal-showing");
     removeClass(modal, "fadeOut")
-    },2000)
+    },500)
 }

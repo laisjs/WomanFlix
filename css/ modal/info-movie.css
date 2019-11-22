@@ -27,8 +27,8 @@
     border: 1px solid #888;
     width: 70%; 
     height: 70%;
-    border-radius: 3vw;
-    align-items: cente
+    border-radius: .5vw;
+    align-items: center;
 }
 
 #movie-title {
@@ -43,20 +43,24 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
+    margin-left: 3vw;
 }
 
 .info-img {
     width: 45%;
-    height: 65%;
+    height: 82%;
     background-position: cover;
     background-repeat: no-repeat;
+    float: right;
 }
 
 .info-text {
     width: 45%;
-    height: 65%;
+    height: 62%;
+    text-align: justify;
     line-height: 1.5;
     font-size: 1.4vw;
+    margin-bottom: 1vw;
 }
 
 .modal-btns {

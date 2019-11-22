@@ -20,10 +20,19 @@ function setText () {
             +'que pode fazer com que sua empresa, a Knox Tecnologies, perca milhões de dólares.'
         break;
         case 'pant-19':
+            textPlace.innerHTML = 'Sabina Wilson (Kristen Stewart) e Jane Kano (Ella Balinska) são duas Panteras que precisam deixar as '
+            +'diferenças de lado quando embarcam em uma aventura internacional junto à nova Bosley (Elizabeth Banks) e com a cientista Elena Houghlin (Naomi Scott). '
+            +'Elas precisam impedir que um novo programa de energia '
+            +'se torne uma ameaça para a humanidade e descobrir quem está por trás de um plano tão maligno.'
         break;
         case 'cap-marv':
+            textPlace.innerHTML = 'Carol Danvers (Brie Larson) é uma ex-agente da Força Aérea norte-americana, que, sem se lembrar de sua vida na Terra,' 
+            +'é recrutada pelos Kree para fazer parte de seu exército de elite. Inimiga declarada dos Skrull, ela acaba voltando '
+            +'ao seu planeta de origem para impedir uma invasão dos metaformos, e assim vai acabar descobrindo a '
+            +'verdade sobre si, com a ajuda do agente Nick Fury (Samuel L. Jackson) e da gata Goose.'
         break;
         case 'extr-fut':
+            textPlace.innerHTML = 'Na sexta aventura da saga Exterminador do Futuro, Arnold Schwarzenegger interpreta novamente o papel icônico de T-800, enquanto Linda Hamilton encarna mais uma vez Sarah Connor.'
         break;
         case 'jog-voraz':
         break;
